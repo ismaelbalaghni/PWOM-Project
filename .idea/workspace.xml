@@ -23,45 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/AccessingDataMysqlApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PWOM-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PWOM-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_09_2020_10_57_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_09_2020_10_57__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/RestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/RestServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PWOM-Project-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/PWOM-Project-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PWOM-Project-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,18 +46,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ismaël Balaghni &lt;ismael.balaghni@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="devCesar" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Users\Ismael\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7319.50\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -100,18 +74,47 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/PWOM-Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.46896553" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AccessingDataMysqlApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccessingDataMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="PWOM-Project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.esiea.restservice.AccessingDataMysqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="PWOM-Project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fr.esiea.restservice.RestServiceApplication" />
@@ -129,7 +132,11 @@
       <option name="presentableId" value="Default" />
       <updated>1599641464418</updated>
       <workItem from="1599641465538" duration="523000" />
-      <workItem from="1599642036750" duration="4291000" />
+      <workItem from="1599642036750" duration="5166000" />
+      <workItem from="1599669316892" duration="34000" />
+      <workItem from="1603999569583" duration="33000" />
+      <workItem from="1604327392238" duration="19000" />
+      <workItem from="1604648772340" duration="4282000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>
@@ -152,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599643021109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël">
+      <created>1599646845068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599646845069</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,33 +188,63 @@
     <MESSAGE value="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #2 - Modification du pom.xml&#10;&#10;Ajout des dépendances pour le projet.&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #3 - Fin du premier tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le premier tutoriel :&#10;* RestServiceApplication (programme principal)&#10;* Greeting (message affiché)&#10;* GreetingController (contrôleur affichant le message)&#10;&#10;Ismaël" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #3 - Fin du premier tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le premier tutoriel :&#10;* RestServiceApplication (programme principal)&#10;* Greeting (message affiché)&#10;* GreetingController (contrôleur affichant le message)&#10;&#10;Ismaël" />
+    <MESSAGE value="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1599642254486">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604649382662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599642254486" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599645280216">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604649382662" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1604654305317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599645280216" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599645280216">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305317" />
+    <state width="636" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1604654305316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599645280216" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599645280216">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305316" />
+    <state width="636" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102062" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1604654305316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599645280216" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599645280216">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305316" />
+    <state width="636" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102062" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1604654305316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599645280216" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1599643024161">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305316" />
+    <state width="636" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1604654305317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599643024161" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305317" />
+    <state width="636" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1604654305317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305317" />
+    <state width="636" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1604654305317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305317" />
+    <state width="636" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1604654305317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604654305317" />
+    <state width="636" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1599646847372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599646847372" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599641843289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
