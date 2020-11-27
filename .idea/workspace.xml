@@ -30,10 +30,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PWOM-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PWOM-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +50,12 @@
       <list>
         <option value="Ismaël Balaghni &lt;ismael.balaghni@gmail.com&gt;" />
       </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -91,7 +94,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.46896553" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.unlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RunDashboard">
@@ -143,7 +146,7 @@
       <workItem from="1604327392238" duration="19000" />
       <workItem from="1604648772340" duration="4282000" />
       <workItem from="1604764574794" duration="5000" />
-      <workItem from="1606491466256" duration="8439000" />
+      <workItem from="1606491466256" duration="11485000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>
@@ -173,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599646845069</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit #5 - Création de premières API - 27/11/2020 18h43CET&#10;&#10;Ajout de plusieurs API :&#10;&gt; sign-up -&gt; API d'inscription d'un utilisateur dans la base&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré par l'utilisateur et &#10;  &gt; ajout dans le repository&#10;&gt; login -&gt; API de connexion d'un utilisateur dans la base&#10;  &gt; comparaison du login utilisateur&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré&#10;  &gt; comparaison du hash généré depuis le mot de passe et le hash de la base&#10;&gt; add -&gt; ajout d'un utilisateur normal (déprécié)&#10;&gt; all -&gt; récupère la liste des utilisateurs&#10;&#10;Définition d'une nouvelle méthode dans l'interface UserRepository&#10;&gt; findByUserLogin -&gt; retourne l'utilisateur en fonction de son login">
+      <created>1606500220178</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606500220178</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +216,8 @@
     <MESSAGE value="Commit #2 - Modification du pom.xml&#10;&#10;Ajout des dépendances pour le projet.&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #3 - Fin du premier tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le premier tutoriel :&#10;* RestServiceApplication (programme principal)&#10;* Greeting (message affiché)&#10;* GreetingController (contrôleur affichant le message)&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël" />
+    <MESSAGE value="Commit #5 - Création de premières API - 27/11/2020 18h43CET&#10;&#10;Ajout de plusieurs API :&#10;&gt; sign-up -&gt; API d'inscription d'un utilisateur dans la base&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré par l'utilisateur et &#10;  &gt; ajout dans le repository&#10;&gt; login -&gt; API de connexion d'un utilisateur dans la base&#10;  &gt; comparaison du login utilisateur&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré&#10;  &gt; comparaison du hash généré depuis le mot de passe et le hash de la base&#10;&gt; add -&gt; ajout d'un utilisateur normal (déprécié)&#10;&gt; all -&gt; récupère la liste des utilisateurs&#10;&#10;Définition d'une nouvelle méthode dans l'interface UserRepository&#10;&gt; findByUserLogin -&gt; retourne l'utilisateur en fonction de son login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #5 - Création de premières API - 27/11/2020 18h43CET&#10;&#10;Ajout de plusieurs API :&#10;&gt; sign-up -&gt; API d'inscription d'un utilisateur dans la base&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré par l'utilisateur et &#10;  &gt; ajout dans le repository&#10;&gt; login -&gt; API de connexion d'un utilisateur dans la base&#10;  &gt; comparaison du login utilisateur&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré&#10;  &gt; comparaison du hash généré depuis le mot de passe et le hash de la base&#10;&gt; add -&gt; ajout d'un utilisateur normal (déprécié)&#10;&gt; all -&gt; récupère la liste des utilisateurs&#10;&#10;Définition d'une nouvelle méthode dans l'interface UserRepository&#10;&gt; findByUserLogin -&gt; retourne l'utilisateur en fonction de son login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="212" key="#com.intellij.ide.util.MemberChooser" timestamp="1604658753920">
@@ -218,58 +229,59 @@
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599642254486" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604649382662" />
-    <state width="1154" height="275" key="GridCell.Tab.0.bottom" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.0.bottom" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="1154" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1154" height="275" key="GridCell.Tab.0.center" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.0.center" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="1154" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102062" />
-    <state width="1154" height="275" key="GridCell.Tab.0.left" timestamp="1606499012193">
+    <state width="552" height="274" key="GridCell.Tab.0.left" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="1154" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012193" />
+    <state width="552" height="274" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102062" />
-    <state width="1154" height="275" key="GridCell.Tab.0.right" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.0.right" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="1154" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1154" height="275" key="GridCell.Tab.1.bottom" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.1.bottom" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1154" height="275" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1154" height="275" key="GridCell.Tab.1.center" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.1.center" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1154" height="275" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1154" height="275" key="GridCell.Tab.1.left" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.1.left" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1154" height="275" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1154" height="275" key="GridCell.Tab.1.right" timestamp="1606499012194">
+    <state width="552" height="274" key="GridCell.Tab.1.right" timestamp="1606501894132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1154" height="275" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606499012194" />
+    <state width="552" height="274" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501894132" />
     <state width="636" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1606498818103">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1606501729683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606498818103" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1599646847372">
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501729683" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606500327032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599646847372" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606500327032" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599641843289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

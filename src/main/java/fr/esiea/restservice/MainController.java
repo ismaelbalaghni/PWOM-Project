@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.util.Base64;
 import java.util.Optional;
 
 @Controller
@@ -47,13 +49,19 @@ public class MainController {
     public @ResponseBody String loginUser(@RequestParam String login, @RequestParam String password) throws NoSuchAlgorithmException {
         // Fonction qui se charge de gérer le login d'un utilisateur
         String token = null;
+        String userToken = null;
+        SecureRandom random = new SecureRandom();
+        Base64.Encoder encoder = Base64.getUrlEncoder();
+        byte[] randomBytes = new byte[24];
+        random.nextBytes(randomBytes);
         User requestedUser = userRepository.findByUserLogin(login);
         if (requestedUser.getUserLogin().equals(login)){
             MessageDigest digest = MessageDigest.getInstance("MD5");
             byte[] hashedUserPassword = digest.digest(password.getBytes());
             String verifyPassword = new String(hashedUserPassword, StandardCharsets.UTF_8);
             if (requestedUser.getUserPassword().equals(verifyPassword)){
-                token = "\nThe password is correct. " + requestedUser.getName() + " successfully logged in.\n";
+                userToken = encoder.encodeToString(randomBytes);
+                token = "\nThe password is correct. " + requestedUser.getName() + " successfully logged in. User token: " + userToken + "\n";
             } else {
                 token = "\nThe password is incorrect. " + requestedUser.getName() + " tried to log in.\n";
             }
