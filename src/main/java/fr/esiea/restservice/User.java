@@ -15,6 +15,10 @@ public class User {
 
     private String email;
 
+    private String userLogin;
+
+    private String userPassword;
+
     public Integer getId() {
         return id;
     }
@@ -37,5 +41,21 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getUserLogin() {
+        return this.userLogin;
+    }
+
+    public void setUserLogin(String userLogin) {
+        this.userLogin = userLogin;
+    }
+
+    public String getUserPassword() {
+        return this.userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 }
