@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.ArrayList;
 
 @Entity
 public class User {
@@ -18,6 +19,8 @@ public class User {
     private String userLogin;
 
     private String userPassword;
+
+    private ArrayList<Integer> userSurveysIDs;
 
     public Integer getId() {
         return id;
@@ -57,5 +60,21 @@ public class User {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+    }
+
+    public ArrayList<Integer> getUserSurveysIDs() {
+        return userSurveysIDs;
+    }
+
+    public void addUserSurveyID(Integer userSurveyID){
+        this.userSurveysIDs.add(userSurveyID);
+    }
+
+    public void removeUserSurveyID(Integer userSurveyID){
+        this.userSurveysIDs.remove(this.userSurveysIDs.indexOf(userSurveyID));
+    }
+
+    public void setUserSurveysIDs(ArrayList<Integer> userSurveysIDs) {
+        this.userSurveysIDs = userSurveysIDs;
     }
 }
