@@ -1,4 +1,4 @@
-package fr.esiea.restservice;
+package fr.esiea.restservice.Model;
 
 public class Greeting {
     private final long id;

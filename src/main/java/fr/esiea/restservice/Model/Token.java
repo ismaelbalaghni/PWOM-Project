@@ -1,5 +1,8 @@
-package fr.esiea.restservice;
+package fr.esiea.restservice.Model;
 
+import org.apache.tomcat.util.log.SystemLogHandler;
+
+import javax.persistence.Entity;
 import java.util.Date;
 
 public class Token {
@@ -14,6 +17,7 @@ public class Token {
         this.token = token;
         this.dateIssued = new Date();
         this.dateExpiring = new Date();
+        this.setDateIssued();
     }
 
     public String getToken() {
@@ -28,11 +32,14 @@ public class Token {
         return dateIssued;
     }
 
-    public void setDateIssued(Date dateIssued) {
+    public void setDateIssued() {
         long tokenTTL = 0;
-        this.dateIssued = dateIssued;
+        System.out.println(tokenTTL);
+        System.out.println(this.dateIssued.getTime());
         tokenTTL = this.dateIssued.getTime() + 1800;
+        System.out.println(tokenTTL);
         this.dateExpiring.setTime(tokenTTL);
+        System.out.println(this.dateExpiring.toString());
     }
 
     public Date getDateExpiring() {

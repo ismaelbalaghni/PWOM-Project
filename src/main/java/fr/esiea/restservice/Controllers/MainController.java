@@ -1,8 +1,9 @@
-package fr.esiea.restservice;
+package fr.esiea.restservice.Controllers;
 
-import org.aspectj.bridge.Message;
+import fr.esiea.restservice.Model.Token;
+import fr.esiea.restservice.Model.User;
+import fr.esiea.restservice.Data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.nio.charset.StandardCharsets;
@@ -10,9 +11,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Base64;
-import java.util.Optional;
 
-@Controller
+@RestController
 @RequestMapping(path = "/app")
 public class MainController {
     @Autowired // This means to get the bean called userRepository
@@ -70,6 +70,7 @@ public class MainController {
         }
         return token;
     }
+
 
     @GetMapping(path="/all")
     public @ResponseBody Iterable<User> getAllUsers() {

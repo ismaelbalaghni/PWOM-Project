@@ -29,9 +29,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Data/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML4 File" />
       </list>
     </option>
   </component>
@@ -68,13 +74,6 @@
     <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Users\Ismael\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7319.50\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1hGdfKpmtvfXs9GeKkD2fpKmvPz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -82,6 +81,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -97,6 +97,14 @@
     <property name="project.structure.side.proportion" value="0.46896553" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.unlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.esiea.restservice.Data" />
+      <recent name="fr.esiea.restservice.Model" />
+      <recent name="fr.esiea.restservice.Controllers" />
+      <recent name="fr.esiea.restservice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -149,7 +157,9 @@
       <workItem from="1604764574794" duration="5000" />
       <workItem from="1606491466256" duration="11701000" />
       <workItem from="1606559541044" duration="17000" />
-      <workItem from="1607499529713" duration="8290000" />
+      <workItem from="1607499529713" duration="12170000" />
+      <workItem from="1607769075464" duration="629000" />
+      <workItem from="1608211188675" duration="7385000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>
@@ -193,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606504553740</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit #7 - Ajout de la génération de token - 09/12/2020 11h25CET&#10;&#10;&gt; Ajout de Token.java&#10;  &gt; Classe Java représentant un Token&#10;  &gt; Contient un String qui correspond au Token&#10;  &gt; Contient une date d'émission&#10;  &gt; Contient une date d'expiration&#10;  &gt; Calcul de la date d'expiration -&gt; date d'émission + 30 minutes&#10;&gt; Modification du MainController.java&#10;  &gt; Ajout de la création d'un objet Token en remplacement de l'user token&#10;  &gt; Ajout de l'affichage de la date d'expiration du token">
+      <created>1607509831982</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607509831982</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,91 +245,7 @@
     <MESSAGE value="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #5 - Création de premières API - 27/11/2020 18h43CET&#10;&#10;Ajout de plusieurs API :&#10;&gt; sign-up -&gt; API d'inscription d'un utilisateur dans la base&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré par l'utilisateur et &#10;  &gt; ajout dans le repository&#10;&gt; login -&gt; API de connexion d'un utilisateur dans la base&#10;  &gt; comparaison du login utilisateur&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré&#10;  &gt; comparaison du hash généré depuis le mot de passe et le hash de la base&#10;&gt; add -&gt; ajout d'un utilisateur normal (déprécié)&#10;&gt; all -&gt; récupère la liste des utilisateurs&#10;&#10;Définition d'une nouvelle méthode dans l'interface UserRepository&#10;&gt; findByUserLogin -&gt; retourne l'utilisateur en fonction de son login" />
     <MESSAGE value="Commit #6 - Ajout de la génération de token - 27/11/2020 18h43CET&#10;&#10;&gt; Ajout de la génération de tokens&#10;  &gt; SecureRandom -&gt; génère un array d'octets aléatoires (et protégés pour éviter les attaques)&#10;  &gt; Base64.Encoder -&gt; génère un hash en Base64 pour le token." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #6 - Ajout de la génération de token - 27/11/2020 18h43CET&#10;&#10;&gt; Ajout de la génération de tokens&#10;  &gt; SecureRandom -&gt; génère un array d'octets aléatoires (et protégés pour éviter les attaques)&#10;  &gt; Base64.Encoder -&gt; génère un hash en Base64 pour le token." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="765" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1607503546330">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="212" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604658753920" />
-    <state x="765" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607503546330" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604649382662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599642254486" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604649382662" />
-    <state width="1494" height="277" key="GridCell.Tab.0.bottom" timestamp="1607508052270">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="567" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576680" />
-    <state width="636" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1494" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052270" />
-    <state width="1494" height="277" key="GridCell.Tab.0.center" timestamp="1607508052270">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="567" height="274" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576679" />
-    <state width="636" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102062" />
-    <state width="1494" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052270" />
-    <state width="1494" height="277" key="GridCell.Tab.0.left" timestamp="1607508052270">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="567" height="274" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576679" />
-    <state width="636" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102062" />
-    <state width="1494" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052270" />
-    <state width="1494" height="277" key="GridCell.Tab.0.right" timestamp="1607508052270">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599647447533" />
-    <state width="567" height="274" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576680" />
-    <state width="636" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1494" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052270" />
-    <state width="1494" height="277" key="GridCell.Tab.1.bottom" timestamp="1607508052271">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="567" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576680" />
-    <state width="636" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1494" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052271" />
-    <state width="1494" height="277" key="GridCell.Tab.1.center" timestamp="1607508052271">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="567" height="274" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576680" />
-    <state width="636" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1494" height="277" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052271" />
-    <state width="1494" height="277" key="GridCell.Tab.1.left" timestamp="1607508052271">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="567" height="274" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576680" />
-    <state width="636" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1494" height="277" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052271" />
-    <state width="1494" height="277" key="GridCell.Tab.1.right" timestamp="1607508052271">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="567" height="274" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504576680" />
-    <state width="636" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604653102063" />
-    <state width="1494" height="277" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607508052271" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1606501729683">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606501729683" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606504563609">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599646847372" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606504563609" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599641843289">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599641843289" />
-    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599641879129">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.-310.1920.1040@0.0.1920.1040" timestamp="1599641879129" />
-    <state x="751" y="414" key="git4idea.ui.GitResetDialog" timestamp="1604655481960">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="751" y="414" key="git4idea.ui.GitResetDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604655481960" />
+    <MESSAGE value="Commit #7 - Ajout de la génération de token - 09/12/2020 11h25CET&#10;&#10;&gt; Ajout de Token.java&#10;  &gt; Classe Java représentant un Token&#10;  &gt; Contient un String qui correspond au Token&#10;  &gt; Contient une date d'émission&#10;  &gt; Contient une date d'expiration&#10;  &gt; Calcul de la date d'expiration -&gt; date d'émission + 30 minutes&#10;&gt; Modification du MainController.java&#10;  &gt; Ajout de la création d'un objet Token en remplacement de l'user token&#10;  &gt; Ajout de l'affichage de la date d'expiration du token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #7 - Ajout de la génération de token - 09/12/2020 11h25CET&#10;&#10;&gt; Ajout de Token.java&#10;  &gt; Classe Java représentant un Token&#10;  &gt; Contient un String qui correspond au Token&#10;  &gt; Contient une date d'émission&#10;  &gt; Contient une date d'expiration&#10;  &gt; Calcul de la date d'expiration -&gt; date d'émission + 30 minutes&#10;&gt; Modification du MainController.java&#10;  &gt; Ajout de la création d'un objet Token en remplacement de l'user token&#10;  &gt; Ajout de l'affichage de la date d'expiration du token" />
   </component>
 </project>

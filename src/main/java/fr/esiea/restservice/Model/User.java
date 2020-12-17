@@ -1,4 +1,4 @@
-package fr.esiea.restservice;
+package fr.esiea.restservice.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
