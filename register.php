@@ -8,7 +8,7 @@
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="nouvellePersonne.php" method="POST">
+            <form action="nouvp.php" method="GET">
                 <h1>Enregistrement</h1>
                 
                 <label><b>Nom</b></label>
@@ -23,9 +23,6 @@
                 <label><b>Mot de passe</b></label>
                 <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 				
-				<label><b>Confirmer mot de passe</b></label>
-                <input type="password" placeholder="Entrer de nouveau le mot de passe" name="password2" required>
-
                 <input type="submit" id='submit' value='ENREGISTREMENT' >
             </form>
 			<form action="index.php" method="POST">
