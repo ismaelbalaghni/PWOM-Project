@@ -8,15 +8,15 @@ import javax.persistence.Id;
 @Entity
 public class MeetPlace {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer placeId;
+
     public String placeName;
 
     public String placeAddress;
 
     public String placeWebsite;
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer placeID;
 
     public MeetPlace(String placeName, String placeAddress, String placeWebsite) {
         this.placeName = placeName;
@@ -56,11 +56,11 @@ public class MeetPlace {
         this.placeWebsite = placeWebsite;
     }
 
-    public void setPlaceID(Integer placeID) {
-        this.placeID = placeID;
+    public void setPlaceId(Integer placeID) {
+        this.placeId = placeID;
     }
 
     public Integer getId() {
-        return placeID;
+        return placeId;
     }
 }

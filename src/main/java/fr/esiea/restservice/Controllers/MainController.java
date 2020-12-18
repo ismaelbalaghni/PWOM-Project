@@ -31,17 +31,6 @@ public class MainController {
     @Autowired
     private UserSurveyRepository userSurveyRepository;
 
-    @PostMapping(path="/add") // Map ONLY POST Requests
-    public @ResponseBody String addNewUser (@RequestParam String name, @RequestParam String email) {
-        // @ResponseBody means the returned String is the response, not a view name
-        // @RequestParam means it is a parameter from the GET or POST request
-        User n = new User();
-        n.setName(name);
-        n.setEmail(email);
-        userRepository.save(n);
-        return "\nSaved";
-    }
-
     @PostMapping(path="/signup") // MAP POST signup request
     public @ResponseBody String signUpUser(@RequestParam String name, @RequestParam String email, @RequestParam String login, @RequestParam String password) throws NoSuchAlgorithmException {
         // Fonction qui se charge de gérer l'inscription d'un utilisateur
@@ -88,6 +77,7 @@ public class MainController {
         User loggedUser = userRepository.findByUserLogin(userLogin);
         Survey userSurvey = new Survey(meetPlaceID, meetDate);
         surveyRepository.save(userSurvey);
+        System.out.println(userSurvey.getSurveyId());
         userSurvey.setUserId(loggedUser.getId());
         UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
         userSurveyRepository.save(userSurveyLink);
@@ -104,8 +94,8 @@ public class MainController {
         return "Survey deleted.";
     }
 
-    @PostMapping(path = "/show_user_surveys")
-    public @ResponseBody Iterable<Survey> getUserSurveys(@RequestParam String userLogin){
+    @GetMapping(path = "/show_user_surveys/{userLogin}")
+    public @ResponseBody Iterable<Survey> getUserSurveys(@PathVariable String userLogin){
         User loggedUser = userRepository.findByUserLogin(userLogin);
         ArrayList<Survey> userSurveys = new ArrayList<>();
         for(UserSurvey userSurveyLink : userSurveyRepository.findAllByUserId(loggedUser.getId())){
@@ -122,8 +112,8 @@ public class MainController {
         return survey.addVote();
     }
 
-    @PostMapping(path = "/get_survey_votes")
-    public @ResponseBody Integer getSurveyVotes(@RequestParam String userLogin, @RequestParam Integer surveyId){
+    @GetMapping(path = "/get_survey_votes/{userLogin}/{surveyId}")
+    public @ResponseBody Integer getSurveyVotes(@PathVariable String userLogin, @PathVariable Integer surveyId){
         Survey survey = surveyRepository.findSurveyBySurveyId(surveyId);
         User user = userRepository.findByUserLogin(userLogin);
         return survey.getVotes();
@@ -136,8 +126,8 @@ public class MainController {
         return "Meeting place added";
     }
 
-    @PostMapping("/get_meeting_places")
-    public @ResponseBody Iterable<MeetPlace> getMeetingPlaces(@RequestParam String userLogin){
+    @GetMapping("/get_meeting_places/{userLogin}")
+    public @ResponseBody Iterable<MeetPlace> getMeetingPlaces(@PathVariable String userLogin){
         User user = userRepository.findByUserLogin(userLogin);
         return meetingPlacesRepository.findAll();
     }

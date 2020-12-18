@@ -24,6 +24,7 @@ public class Survey {
     public Survey(Integer meetPlaceId, String meetDate) throws ParseException {
         this.meetPlaceId = meetPlaceId;
         this.meetDate = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE).parse(meetDate);
+        this.votes = 0;
     }
 
     public Survey() {

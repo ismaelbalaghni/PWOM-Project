@@ -29,14 +29,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
-      <change afterPath="$PROJECT_DIR$/Docs/API_documentation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Data/UserSurveyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/UserSurvey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PWOM-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PWOM-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Data/SurveyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Data/SurveyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/MeetPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/MeetPlace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Survey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/RestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/RestServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1606559541044" duration="17000" />
       <workItem from="1607499529713" duration="12170000" />
       <workItem from="1607769075464" duration="629000" />
-      <workItem from="1608211188675" duration="21632000" />
+      <workItem from="1608211188675" duration="27088000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>
@@ -232,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608246533926</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit #10 - Ajout d'une table de lien entre sondages et utilisateurs - 18/12/2020 10h37CET&#10;&#10;&gt; Ajout d'une table permettant de lier sondages et utilisateurs&#10;&gt; Création d'un début de documentation pour les API&#10;&gt; Modification des API de création de sondage pour ajouter la table de lien entre sondages et utilisateurs&#10;&gt; Modification de la classe User pour corriger le problème d'ArrayList">
+      <created>1608284377861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608284377861</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +278,7 @@
     <MESSAGE value="Commit #7 - Ajout de la génération de token - 09/12/2020 11h25CET&#10;&#10;&gt; Ajout de Token.java&#10;  &gt; Classe Java représentant un Token&#10;  &gt; Contient un String qui correspond au Token&#10;  &gt; Contient une date d'émission&#10;  &gt; Contient une date d'expiration&#10;  &gt; Calcul de la date d'expiration -&gt; date d'émission + 30 minutes&#10;&gt; Modification du MainController.java&#10;  &gt; Ajout de la création d'un objet Token en remplacement de l'user token&#10;  &gt; Ajout de l'affichage de la date d'expiration du token" />
     <MESSAGE value="Commit #8 - Répartition en type MVC et ajout d'une page HTML - 17/12/2020 21h51CET&#10;&#10;&gt; Répartition des différents fichiers dans des dossiers adaptés : Data, Model et Controller&#10;&gt; Création d'une page HTML qui pourra nous servir de base." />
     <MESSAGE value="Commit #9 - Ajout des API de sondage - 18/12/2020 00h06CET&#10;&#10;&gt; Création d'une API de création de sondage&#10;&gt; Création d'une API de suppression de sondage&#10;&gt; Création d'une API d'affichage des sondages utilisateur&#10;&gt; Création d'une classe Sondage permettant de contenir les principales informations du sondage&#10;&gt; Création d'une classe MeetPlace permettant de contenir les informations sur le lieu de rendez-vous&#10;&gt; Ajout de 2 repositories pour les sondages et les lieux de rendez-vous" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #9 - Ajout des API de sondage - 18/12/2020 00h06CET&#10;&#10;&gt; Création d'une API de création de sondage&#10;&gt; Création d'une API de suppression de sondage&#10;&gt; Création d'une API d'affichage des sondages utilisateur&#10;&gt; Création d'une classe Sondage permettant de contenir les principales informations du sondage&#10;&gt; Création d'une classe MeetPlace permettant de contenir les informations sur le lieu de rendez-vous&#10;&gt; Ajout de 2 repositories pour les sondages et les lieux de rendez-vous" />
+    <MESSAGE value="Commit #10 - Ajout d'une table de lien entre sondages et utilisateurs - 18/12/2020 10h37CET&#10;&#10;&gt; Ajout d'une table permettant de lier sondages et utilisateurs&#10;&gt; Création d'un début de documentation pour les API&#10;&gt; Modification des API de création de sondage pour ajouter la table de lien entre sondages et utilisateurs&#10;&gt; Modification de la classe User pour corriger le problème d'ArrayList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #10 - Ajout d'une table de lien entre sondages et utilisateurs - 18/12/2020 10h37CET&#10;&#10;&gt; Ajout d'une table permettant de lier sondages et utilisateurs&#10;&gt; Création d'un début de documentation pour les API&#10;&gt; Modification des API de création de sondage pour ajouter la table de lien entre sondages et utilisateurs&#10;&gt; Modification de la classe User pour corriger le problème d'ArrayList" />
   </component>
 </project>
