@@ -5,14 +5,14 @@
 
     </head>
     <body>
-	
+
 	<?php
 		session_start();
 		if (!isset($_SESSION['username'])){
 			header('Location: index.php');
 		}
 	?>
-		
+
 
     <div class="container">
 
@@ -27,10 +27,10 @@
 			<form action="deco.php" method="GET">
 				<!--<label><b>Nom</b></label><br>
                 <label><b><?php echo $_SESSION['name']?></b></label><br><br>
-				
+
 				<label><b>Email</b></label><br>
                 <label><b><?php echo $_SESSION['mail']?></b></label><br><br>-->
-				
+
 				<label><b>Pseudo</b></label><br>
                 <label><b><?php echo $_SESSION['username']?></b></label><br><br>
 
@@ -43,14 +43,20 @@
 			<hr>
 			<div>
 				<?php
-					$ch = curl_init("http://localhost:8080/app/signup?");
-					$data = array("name"=>$_GET['name'],"email"=>$_GET['mail'],"login"=>$_GET['username'],"password"=>$_GET['password']);
+					$ch = curl_init("http://localhost:8080/app/get_user_surveys/?");
+					$data = array("login"=>$_SESSION['username']);
 
 					curl_setopt($ch, CURLOPT_POST, 1);
 					curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($data));
 					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 					$response = curl_exec($ch);
+
+          $surveys=json_decode($response,true);
+          var_export($surveys);
+          foreach ($surveys as $survey) {
+            echo $survey[surveyId].' '.$survey[meetPlaceId].' '.$survey[meetDate].'<br/>';
+          }
 				?>
 			</div>
 		</div>
