@@ -22,29 +22,37 @@
 		</div>
 
 		<div class="contenu activeContenu" data-anim="1">
-			<h3>Modifier vos informations</h3>
+			<h3>Consulter vos informations</h3>
 			<hr>
-			<form>
-				<label><b>Nom</b></label>
-                <input type="text" placeholder="<?php echo $_SESSION['name']?>" name="name" required>
+			<form action="deco.php" method="GET">
+				<!--<label><b>Nom</b></label><br>
+                <label><b><?php echo $_SESSION['name']?></b></label><br><br>
 				
-				<label><b>Email</b></label>
-                <input type="text" placeholder="<?php echo $_SESSION['mail']?>" name="mail" required>
+				<label><b>Email</b></label><br>
+                <label><b><?php echo $_SESSION['mail']?></b></label><br><br>-->
 				
-				<label><b>Pseudo</b></label>
-                <input type="text" placeholder="<?php echo $_SESSION['username']?>" name="username" required>
+				<label><b>Pseudo</b></label><br>
+                <label><b><?php echo $_SESSION['username']?></b></label><br><br>
 
-                <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="" name="password" required>
-
-                <input type="submit" id='submit' value='SAUVEGARDER' >
+                <input type="submit" id='unlog' value='DECONNEXION'>
 			</form>
 		</div>
 
 		<div class="contenu" data-anim="2">
 			<h3>Créer un sondage</h3>
 			<hr>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis alias quod, dolores eum illum doloremque assumenda odio architecto, dolorum vitae nobis, quo deleniti ipsum.</p>
+			<div>
+				<?php
+					$ch = curl_init("http://localhost:8080/app/signup?");
+					$data = array("name"=>$_GET['name'],"email"=>$_GET['mail'],"login"=>$_GET['username'],"password"=>$_GET['password']);
+
+					curl_setopt($ch, CURLOPT_POST, 1);
+					curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($data));
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+					$response = curl_exec($ch);
+				?>
+			</div>
 		</div>
 
 

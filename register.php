@@ -15,13 +15,13 @@
                 <input type="text" placeholder="Entrer le nom d'utilisateur" name="name" required>
 				
 				<label><b>Email</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="mail" required>
+                <input type="text" placeholder="Entrer le mail de l'utilisateur" name="mail" required>
 				
 				<label><b>Pseudo</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                <input type="text" placeholder="Entrer le pseudo de l'utilisateur" name="username" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" placeholder="Entrer le mot de passe de l'utilisateur" name="password" required>
 				
                 <input type="submit" id='submit' value='ENREGISTREMENT' >
             </form>

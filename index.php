@@ -8,7 +8,7 @@
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="verification.php" method="POST">
+            <form action="login.php" method="GET">
                 <h1>Connexion</h1>
                 
                 <label><b>Pseudo</b></label>

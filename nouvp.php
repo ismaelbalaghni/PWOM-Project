@@ -13,7 +13,6 @@
 		$_SESSION['name']=$_GET['name'];
 		$_SESSION['mail']=$_GET['mail'];
 		$_SESSION['username']=$_GET['username'];
-		$_SESSION['password']=$_GET['password'];
 		header('Location: menu.php');
 	}
 ?>
