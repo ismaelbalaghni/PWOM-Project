@@ -1,33 +1,36 @@
 package fr.esiea.restservice.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.*;
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.util.Date;
+import java.util.Locale;
 
 @Entity
 public class Survey {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer surveyID;
+    private Integer surveyId;
 
-    private Integer meetPlaceID;
+    private Integer meetPlaceId;
 
     private Date meetDate;
 
-    public Survey(Integer meetPlaceID, Date meetDate) {
-        this.meetPlaceID = meetPlaceID;
-        this.meetDate = meetDate;
+    private Integer userId;
+
+    private Integer votes;
+
+    public Survey(Integer meetPlaceId, String meetDate) throws ParseException {
+        this.meetPlaceId = meetPlaceId;
+        this.meetDate = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE).parse(meetDate);
     }
 
     public Survey() {
     }
 
-    public Integer getMeetPlaceID() {
-        return meetPlaceID;
+    public Integer getMeetPlaceId() {
+        return meetPlaceId;
     }
 
     public Date getMeetDate() {
@@ -38,15 +41,34 @@ public class Survey {
         this.meetDate = meetDate;
     }
 
-    public Integer getSurveyID() {
-        return surveyID;
+    public Integer getSurveyId() {
+        return surveyId;
     }
 
-    public void setSurveyID(Integer surveyID) {
-        this.surveyID = surveyID;
+    public void setSurveyId(Integer surveyID) {
+        this.surveyId = surveyID;
     }
 
-    public void setMeetPlaceID(Integer meetPlaceID) {
-        this.meetPlaceID = meetPlaceID;
+    public void setMeetPlaceId(Integer meetPlaceID) {
+        this.meetPlaceId = meetPlaceID;
     }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getVotes() {
+        return votes;
+    }
+
+    public boolean addVote(){
+        this.votes += 1;
+        return true;
+    }
+
+
 }

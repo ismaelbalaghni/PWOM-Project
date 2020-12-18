@@ -6,5 +6,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface SurveyRepository extends CrudRepository<Survey, Integer> {
-    Survey findSurveyBySurveyID(Integer surveyID);
+    Survey findSurveyBySurveyId(Integer surveyId);
 }

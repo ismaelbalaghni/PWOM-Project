@@ -2,18 +2,18 @@ package fr.esiea.restservice.Controllers;
 
 import fr.esiea.restservice.Data.MeetingPlacesRepository;
 import fr.esiea.restservice.Data.SurveyRepository;
-import fr.esiea.restservice.Model.MeetPlace;
-import fr.esiea.restservice.Model.Survey;
-import fr.esiea.restservice.Model.Token;
-import fr.esiea.restservice.Model.User;
+import fr.esiea.restservice.Data.UserSurveyRepository;
+import fr.esiea.restservice.Model.*;
 import fr.esiea.restservice.Data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.PostRemove;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Date;
@@ -28,6 +28,8 @@ public class MainController {
     private SurveyRepository surveyRepository;
     @Autowired
     private MeetingPlacesRepository meetingPlacesRepository;
+    @Autowired
+    private UserSurveyRepository userSurveyRepository;
 
     @PostMapping(path="/add") // Map ONLY POST Requests
     public @ResponseBody String addNewUser (@RequestParam String name, @RequestParam String email) {
@@ -82,31 +84,62 @@ public class MainController {
     }
 
     @PostMapping(path = "/create_survey")
-    public @ResponseBody String createSurvey(@RequestParam String userLogin, @RequestParam Integer meetPlaceID, @RequestParam Date meetDate){
+    public @ResponseBody String createSurvey(@RequestParam String userLogin, @RequestParam Integer meetPlaceID, @RequestParam String meetDate) throws ParseException {
         User loggedUser = userRepository.findByUserLogin(userLogin);
         Survey userSurvey = new Survey(meetPlaceID, meetDate);
-        loggedUser.addUserSurveyID(userSurvey.getSurveyID());
         surveyRepository.save(userSurvey);
+        userSurvey.setUserId(loggedUser.getId());
+        UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
+        userSurveyRepository.save(userSurveyLink);
         return "Survey created";
     }
 
     @PostMapping(path = "/delete_survey")
-    public @ResponseBody String deleteSurvey(@RequestParam String userLogin, @RequestParam Integer userSurveyID){
-        Survey userSurvey = surveyRepository.findSurveyBySurveyID(userSurveyID);
+    public @ResponseBody String deleteSurvey(@RequestParam String userLogin, @RequestParam Integer userSurveyId){
+        Survey userSurvey = surveyRepository.findSurveyBySurveyId(userSurveyId);
         User loggedUser = userRepository.findByUserLogin(userLogin);
-        loggedUser.removeUserSurveyID(userSurveyID);
+        UserSurvey userSurveyLink = userSurveyRepository.findUserSurveyBySurveyIdAndUserId(userSurveyId, loggedUser.getId());
         surveyRepository.delete(userSurvey);
+        userSurveyRepository.delete(userSurveyLink);
         return "Survey deleted.";
     }
 
     @PostMapping(path = "/show_user_surveys")
     public @ResponseBody Iterable<Survey> getUserSurveys(@RequestParam String userLogin){
-        ArrayList<Survey> userSurveys = new ArrayList<>();
         User loggedUser = userRepository.findByUserLogin(userLogin);
-        for(Integer loggedUserSurveysID : loggedUser.getUserSurveysIDs()){
-            userSurveys.add(surveyRepository.findSurveyBySurveyID(loggedUserSurveysID));
+        ArrayList<Survey> userSurveys = new ArrayList<>();
+        for(UserSurvey userSurveyLink : userSurveyRepository.findAllByUserId(loggedUser.getId())){
+            Survey survey = surveyRepository.findSurveyBySurveyId(userSurveyLink.getSurveyId());
+            userSurveys.add(survey);
         }
         return userSurveys;
+    }
+
+    @PostMapping(path = "/vote_survey")
+    public @ResponseBody boolean voteForSurvey(@RequestParam String userLogin, @RequestParam Integer surveyId){
+        Survey survey = surveyRepository.findSurveyBySurveyId(surveyId);
+        User user = userRepository.findByUserLogin(userLogin);
+        return survey.addVote();
+    }
+
+    @PostMapping(path = "/get_survey_votes")
+    public @ResponseBody Integer getSurveyVotes(@RequestParam String userLogin, @RequestParam Integer surveyId){
+        Survey survey = surveyRepository.findSurveyBySurveyId(surveyId);
+        User user = userRepository.findByUserLogin(userLogin);
+        return survey.getVotes();
+    }
+
+    @PostMapping("/add_meeting_place")
+    public @ResponseBody String addMeetingPlace(@RequestParam String placeName, @RequestParam String placeAddress, @RequestParam String placeWebsite){
+        MeetPlace meetPlace = new MeetPlace(placeName, placeAddress, placeWebsite);
+        meetingPlacesRepository.save(meetPlace);
+        return "Meeting place added";
+    }
+
+    @PostMapping("/get_meeting_places")
+    public @ResponseBody Iterable<MeetPlace> getMeetingPlaces(@RequestParam String userLogin){
+        User user = userRepository.findByUserLogin(userLogin);
+        return meetingPlacesRepository.findAll();
     }
 
     @GetMapping(path="/all")
