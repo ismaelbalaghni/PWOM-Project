@@ -1,0 +1,6 @@
+fr\esiea\restservice\User.class
+fr\esiea\restservice\AccessingDataMysqlApplication.class
+fr\esiea\restservice\MainController.class
+fr\esiea\restservice\Greeting.class
+fr\esiea\restservice\GreetingController.class
+fr\esiea\restservice\UserRepository.class

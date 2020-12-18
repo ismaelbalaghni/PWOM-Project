@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML4 File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ismaël Balaghni &lt;ismael.balaghni@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="devCesar" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1hGdfKpmtvfXs9GeKkD2fpKmvPz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.46896553" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="show.unlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.esiea.restservice.Data" />
+      <recent name="fr.esiea.restservice.Model" />
+      <recent name="fr.esiea.restservice.Controllers" />
+      <recent name="fr.esiea.restservice" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AccessingDataMysqlApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccessingDataMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="PWOM-Project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.esiea.restservice.AccessingDataMysqlApplication" />
+      <option name="DEBUG_MODE" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="PWOM-Project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.esiea.restservice.RestServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AccessingDataMysqlApplication" />
+      <item itemvalue="Spring Boot.RestServiceApplication" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="" />
+      <created>1599641464418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599641464418</updated>
+      <workItem from="1599641465538" duration="523000" />
+      <workItem from="1599642036750" duration="5166000" />
+      <workItem from="1599669316892" duration="34000" />
+      <workItem from="1603999569583" duration="33000" />
+      <workItem from="1604327392238" duration="19000" />
+      <workItem from="1604648772340" duration="4282000" />
+      <workItem from="1604764574794" duration="5000" />
+      <workItem from="1606491466256" duration="11701000" />
+      <workItem from="1606559541044" duration="17000" />
+      <workItem from="1607499529713" duration="12170000" />
+      <workItem from="1607769075464" duration="629000" />
+      <workItem from="1608211188675" duration="27388000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
+      <created>1599641697066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599641697066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit #2 - Modification du pom.xml&#10;&#10;Ajout des dépendances pour le projet.&#10;&#10;Ismaël">
+      <created>1599642535009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599642535009</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit #3 - Fin du premier tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le premier tutoriel :&#10;* RestServiceApplication (programme principal)&#10;* Greeting (message affiché)&#10;* GreetingController (contrôleur affichant le message)&#10;&#10;Ismaël">
+      <created>1599643021109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599643021109</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël">
+      <created>1599646845068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599646845069</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit #5 - Création de premières API - 27/11/2020 18h43CET&#10;&#10;Ajout de plusieurs API :&#10;&gt; sign-up -&gt; API d'inscription d'un utilisateur dans la base&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré par l'utilisateur et &#10;  &gt; ajout dans le repository&#10;&gt; login -&gt; API de connexion d'un utilisateur dans la base&#10;  &gt; comparaison du login utilisateur&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré&#10;  &gt; comparaison du hash généré depuis le mot de passe et le hash de la base&#10;&gt; add -&gt; ajout d'un utilisateur normal (déprécié)&#10;&gt; all -&gt; récupère la liste des utilisateurs&#10;&#10;Définition d'une nouvelle méthode dans l'interface UserRepository&#10;&gt; findByUserLogin -&gt; retourne l'utilisateur en fonction de son login">
+      <created>1606500220178</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606500220178</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit #6 - Ajout de la génération de token - 27/11/2020 18h43CET&#10;&#10;&gt; Ajout de la génération de tokens&#10;  &gt; SecureRandom -&gt; génère un array d'octets aléatoires (et protégés pour éviter les attaques)&#10;  &gt; Base64.Encoder -&gt; génère un hash en Base64 pour le token.">
+      <created>1606504553740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606504553740</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit #7 - Ajout de la génération de token - 09/12/2020 11h25CET&#10;&#10;&gt; Ajout de Token.java&#10;  &gt; Classe Java représentant un Token&#10;  &gt; Contient un String qui correspond au Token&#10;  &gt; Contient une date d'émission&#10;  &gt; Contient une date d'expiration&#10;  &gt; Calcul de la date d'expiration -&gt; date d'émission + 30 minutes&#10;&gt; Modification du MainController.java&#10;  &gt; Ajout de la création d'un objet Token en remplacement de l'user token&#10;  &gt; Ajout de l'affichage de la date d'expiration du token">
+      <created>1607509831982</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607509831982</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit #8 - Répartition en type MVC et ajout d'une page HTML - 17/12/2020 21h51CET&#10;&#10;&gt; Répartition des différents fichiers dans des dossiers adaptés : Data, Model et Controller&#10;&gt; Création d'une page HTML qui pourra nous servir de base.">
+      <created>1608239501309</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608239501310</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit #9 - Ajout des API de sondage - 18/12/2020 00h06CET&#10;&#10;&gt; Création d'une API de création de sondage&#10;&gt; Création d'une API de suppression de sondage&#10;&gt; Création d'une API d'affichage des sondages utilisateur&#10;&gt; Création d'une classe Sondage permettant de contenir les principales informations du sondage&#10;&gt; Création d'une classe MeetPlace permettant de contenir les informations sur le lieu de rendez-vous&#10;&gt; Ajout de 2 repositories pour les sondages et les lieux de rendez-vous">
+      <created>1608246533926</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608246533926</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commit #10 - Ajout d'une table de lien entre sondages et utilisateurs - 18/12/2020 10h37CET&#10;&#10;&gt; Ajout d'une table permettant de lier sondages et utilisateurs&#10;&gt; Création d'un début de documentation pour les API&#10;&gt; Modification des API de création de sondage pour ajouter la table de lien entre sondages et utilisateurs&#10;&gt; Modification de la classe User pour corriger le problème d'ArrayList">
+      <created>1608284377861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608284377861</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit #11 - Modification de l'API de sondage - 18/12/2020 10h37CET&#10;&#10;&gt; Modification de la page d'API&#10;&gt; Ajout d'une dépendance permettant d'avoir une documentation d'API : localhost:8080/api-documentation.html&#10;&gt; Modification de User pour optimiser les imports&#10;&gt; Modification de la base de données utilisées (projet_database au lieu de db_example)&#10;&gt; Renommage de certains paramètres pour MeetPlace">
+      <created>1608289833135</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608289833135</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commit #13 - Ajout du token fonctionnel - 18/12/2020 17h21CET&#10;&#10;&gt; Modification du type pour la date d'émission et date d'expiration (API Java 8)&#10;&gt; Calcul de la date d'expiration (30 minutes)&#10;&gt; Ajout d'une fonctionnalité de renouvellement de token&#10;&gt; Ajout du token utilisateur en variable d'état&#10;&gt; Modification des fonctions importantes avec le support de la vérification du token utilisateur&#10;&gt; Modification de l'API d'affichage des lieux pour enlever la nécessité du login&#10;&gt; Modification de l'API d'affichage des votes du sondage pour enlever la nécessité du login&#10;&gt; Modification de l'API du vote pour le sondage pour pouvoir voter en anonyme">
+      <created>1608308713800</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608308713800</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël" />
+    <MESSAGE value="Commit #2 - Modification du pom.xml&#10;&#10;Ajout des dépendances pour le projet.&#10;&#10;Ismaël" />
+    <MESSAGE value="Commit #3 - Fin du premier tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le premier tutoriel :&#10;* RestServiceApplication (programme principal)&#10;* Greeting (message affiché)&#10;* GreetingController (contrôleur affichant le message)&#10;&#10;Ismaël" />
+    <MESSAGE value="Commit #4 - Fin du deuxième tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le deuxième tutoriel :&#10;* Ajout des dépendances pour se connecter à une BDD MySql&#10;* Ajout du application.properties permettant de définir les paramètres de l'application&#10;* Création de User, modèle entité qui représente un utilisateur dans notre BDD (Hibernate s'occupe de la trad. automatique)&#10;* Création de UserRepository qui permet de stocker les utilisateurs&#10;* Création de MainController qui permet de gérer les requêtes HTTP&#10;* Création de AccessingDataMysqlApplication qui est la classe principale (celle ayant le main)&#10;&#10;Ismaël" />
+    <MESSAGE value="Commit #5 - Création de premières API - 27/11/2020 18h43CET&#10;&#10;Ajout de plusieurs API :&#10;&gt; sign-up -&gt; API d'inscription d'un utilisateur dans la base&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré par l'utilisateur et &#10;  &gt; ajout dans le repository&#10;&gt; login -&gt; API de connexion d'un utilisateur dans la base&#10;  &gt; comparaison du login utilisateur&#10;  &gt; génération d'un MD5 basé sur le mot de passe entré&#10;  &gt; comparaison du hash généré depuis le mot de passe et le hash de la base&#10;&gt; add -&gt; ajout d'un utilisateur normal (déprécié)&#10;&gt; all -&gt; récupère la liste des utilisateurs&#10;&#10;Définition d'une nouvelle méthode dans l'interface UserRepository&#10;&gt; findByUserLogin -&gt; retourne l'utilisateur en fonction de son login" />
+    <MESSAGE value="Commit #6 - Ajout de la génération de token - 27/11/2020 18h43CET&#10;&#10;&gt; Ajout de la génération de tokens&#10;  &gt; SecureRandom -&gt; génère un array d'octets aléatoires (et protégés pour éviter les attaques)&#10;  &gt; Base64.Encoder -&gt; génère un hash en Base64 pour le token." />
+    <MESSAGE value="Commit #7 - Ajout de la génération de token - 09/12/2020 11h25CET&#10;&#10;&gt; Ajout de Token.java&#10;  &gt; Classe Java représentant un Token&#10;  &gt; Contient un String qui correspond au Token&#10;  &gt; Contient une date d'émission&#10;  &gt; Contient une date d'expiration&#10;  &gt; Calcul de la date d'expiration -&gt; date d'émission + 30 minutes&#10;&gt; Modification du MainController.java&#10;  &gt; Ajout de la création d'un objet Token en remplacement de l'user token&#10;  &gt; Ajout de l'affichage de la date d'expiration du token" />
+    <MESSAGE value="Commit #8 - Répartition en type MVC et ajout d'une page HTML - 17/12/2020 21h51CET&#10;&#10;&gt; Répartition des différents fichiers dans des dossiers adaptés : Data, Model et Controller&#10;&gt; Création d'une page HTML qui pourra nous servir de base." />
+    <MESSAGE value="Commit #9 - Ajout des API de sondage - 18/12/2020 00h06CET&#10;&#10;&gt; Création d'une API de création de sondage&#10;&gt; Création d'une API de suppression de sondage&#10;&gt; Création d'une API d'affichage des sondages utilisateur&#10;&gt; Création d'une classe Sondage permettant de contenir les principales informations du sondage&#10;&gt; Création d'une classe MeetPlace permettant de contenir les informations sur le lieu de rendez-vous&#10;&gt; Ajout de 2 repositories pour les sondages et les lieux de rendez-vous" />
+    <MESSAGE value="Commit #10 - Ajout d'une table de lien entre sondages et utilisateurs - 18/12/2020 10h37CET&#10;&#10;&gt; Ajout d'une table permettant de lier sondages et utilisateurs&#10;&gt; Création d'un début de documentation pour les API&#10;&gt; Modification des API de création de sondage pour ajouter la table de lien entre sondages et utilisateurs&#10;&gt; Modification de la classe User pour corriger le problème d'ArrayList" />
+    <MESSAGE value="Commit #11 - Modification de l'API de sondage - 18/12/2020 10h37CET&#10;&#10;&gt; Modification de la page d'API&#10;&gt; Ajout d'une dépendance permettant d'avoir une documentation d'API : localhost:8080/api-documentation.html&#10;&gt; Modification de User pour optimiser les imports&#10;&gt; Modification de la base de données utilisées (projet_database au lieu de db_example)&#10;&gt; Renommage de certains paramètres pour MeetPlace" />
+    <MESSAGE value="Commit #13 - Ajout du token fonctionnel - 18/12/2020 17h21CET&#10;&#10;&gt; Modification du type pour la date d'émission et date d'expiration (API Java 8)&#10;&gt; Calcul de la date d'expiration (30 minutes)&#10;&gt; Ajout d'une fonctionnalité de renouvellement de token&#10;&gt; Ajout du token utilisateur en variable d'état&#10;&gt; Modification des fonctions importantes avec le support de la vérification du token utilisateur&#10;&gt; Modification de l'API d'affichage des lieux pour enlever la nécessité du login&#10;&gt; Modification de l'API d'affichage des votes du sondage pour enlever la nécessité du login&#10;&gt; Modification de l'API du vote pour le sondage pour pouvoir voter en anonyme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #13 - Ajout du token fonctionnel - 18/12/2020 17h21CET&#10;&#10;&gt; Modification du type pour la date d'émission et date d'expiration (API Java 8)&#10;&gt; Calcul de la date d'expiration (30 minutes)&#10;&gt; Ajout d'une fonctionnalité de renouvellement de token&#10;&gt; Ajout du token utilisateur en variable d'état&#10;&gt; Modification des fonctions importantes avec le support de la vérification du token utilisateur&#10;&gt; Modification de l'API d'affichage des lieux pour enlever la nécessité du login&#10;&gt; Modification de l'API d'affichage des votes du sondage pour enlever la nécessité du login&#10;&gt; Modification de l'API du vote pour le sondage pour pouvoir voter en anonyme" />
+  </component>
+</project>
