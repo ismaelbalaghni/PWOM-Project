@@ -28,7 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël" />
+    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Token.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

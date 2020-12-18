@@ -14,6 +14,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.text.ParseException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Date;
@@ -31,6 +32,8 @@ public class MainController {
     @Autowired
     private UserSurveyRepository userSurveyRepository;
 
+    private Token userToken;
+
     @PostMapping(path="/signup") // MAP POST signup request
     public @ResponseBody String signUpUser(@RequestParam String name, @RequestParam String email, @RequestParam String login, @RequestParam String password) throws NoSuchAlgorithmException {
         // Fonction qui se charge de gérer l'inscription d'un utilisateur
@@ -47,11 +50,9 @@ public class MainController {
     }
 
     @PostMapping(path="/login") // MAP POST login request
-    public @ResponseBody String loginUser(@RequestParam String login, @RequestParam String password) throws NoSuchAlgorithmException {
+    public @ResponseBody Token loginUser(@RequestParam String login, @RequestParam String password) throws NoSuchAlgorithmException {
         // Fonction qui se charge de gérer le login d'un utilisateur
         String token = null;
-        String userToken = null;
-        Token uToken = null;
         SecureRandom random = new SecureRandom();
         Base64.Encoder encoder = Base64.getUrlEncoder();
         byte[] randomBytes = new byte[24];
@@ -62,73 +63,129 @@ public class MainController {
             byte[] hashedUserPassword = digest.digest(password.getBytes());
             String verifyPassword = new String(hashedUserPassword, StandardCharsets.UTF_8);
             if (requestedUser.getUserPassword().equals(verifyPassword)){
-                userToken = encoder.encodeToString(randomBytes);
-                uToken = new Token(userToken);
-                token = "\nThe password is correct. " + requestedUser.getName() + " successfully logged in. User token expires on: " + uToken.getDateExpiring().toString() + "\n";
+                token = encoder.encodeToString(randomBytes);
+                userToken = new Token(token);
             } else {
-                token = "\nThe password is incorrect. " + requestedUser.getName() + " tried to log in.\n";
+                userToken = null;
             }
         }
-        return token;
+        return userToken;
     }
 
     @PostMapping(path = "/create_survey")
     public @ResponseBody String createSurvey(@RequestParam String userLogin, @RequestParam Integer meetPlaceID, @RequestParam String meetDate) throws ParseException {
         User loggedUser = userRepository.findByUserLogin(userLogin);
-        Survey userSurvey = new Survey(meetPlaceID, meetDate);
-        surveyRepository.save(userSurvey);
-        System.out.println(userSurvey.getSurveyId());
-        userSurvey.setUserId(loggedUser.getId());
-        UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
-        userSurveyRepository.save(userSurveyLink);
-        return "Survey created";
+        LocalDateTime actualTime = LocalDateTime.now();
+        String response;
+        if(userToken.getDateExpiring().isAfter(actualTime)){
+            Survey userSurvey = new Survey(meetPlaceID, meetDate);
+            surveyRepository.save(userSurvey);
+            System.out.println(userSurvey.getSurveyId());
+            userSurvey.setUserId(loggedUser.getId());
+            UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
+            userSurveyRepository.save(userSurveyLink);
+            response = "Survey created";
+        } else {
+            if(userToken.renewToken()){
+                Survey userSurvey = new Survey(meetPlaceID, meetDate);
+                surveyRepository.save(userSurvey);
+                System.out.println(userSurvey.getSurveyId());
+                userSurvey.setUserId(loggedUser.getId());
+                UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
+                userSurveyRepository.save(userSurveyLink);
+                response = "Survey created";
+            } else {
+                response = "ERROR, TOKEN COULD NOT BE RENEWED";
+            }
+        }
+
+        return response;
     }
 
     @PostMapping(path = "/delete_survey")
     public @ResponseBody String deleteSurvey(@RequestParam String userLogin, @RequestParam Integer userSurveyId){
         Survey userSurvey = surveyRepository.findSurveyBySurveyId(userSurveyId);
         User loggedUser = userRepository.findByUserLogin(userLogin);
-        UserSurvey userSurveyLink = userSurveyRepository.findUserSurveyBySurveyIdAndUserId(userSurveyId, loggedUser.getId());
-        surveyRepository.delete(userSurvey);
-        userSurveyRepository.delete(userSurveyLink);
-        return "Survey deleted.";
+        LocalDateTime actualTime = LocalDateTime.now();
+        String response;
+        if(userToken.getDateExpiring().isAfter(actualTime)){
+            UserSurvey userSurveyLink = userSurveyRepository.findUserSurveyBySurveyIdAndUserId(userSurveyId, loggedUser.getId());
+            surveyRepository.delete(userSurvey);
+            userSurveyRepository.delete(userSurveyLink);
+            response = "Survey deleted";
+        } else {
+            if(userToken.renewToken()){
+                UserSurvey userSurveyLink = userSurveyRepository.findUserSurveyBySurveyIdAndUserId(userSurveyId, loggedUser.getId());
+                surveyRepository.delete(userSurvey);
+                userSurveyRepository.delete(userSurveyLink);
+                response = "Survey deleted";
+            } else {
+                response = "ERROR, TOKEN COULD NOT BE RENEWED";
+            }
+        }
+        return response;
     }
 
     @GetMapping(path = "/show_user_surveys/{userLogin}")
     public @ResponseBody Iterable<Survey> getUserSurveys(@PathVariable String userLogin){
         User loggedUser = userRepository.findByUserLogin(userLogin);
         ArrayList<Survey> userSurveys = new ArrayList<>();
-        for(UserSurvey userSurveyLink : userSurveyRepository.findAllByUserId(loggedUser.getId())){
-            Survey survey = surveyRepository.findSurveyBySurveyId(userSurveyLink.getSurveyId());
-            userSurveys.add(survey);
+        LocalDateTime actualTime = LocalDateTime.now();
+        ArrayList<Survey> response = new ArrayList<>();
+        if(userToken.getDateExpiring().isAfter(actualTime)){
+            for(UserSurvey userSurveyLink : userSurveyRepository.findAllByUserId(loggedUser.getId())){
+                Survey survey = surveyRepository.findSurveyBySurveyId(userSurveyLink.getSurveyId());
+                userSurveys.add(survey);
+            }
+            response = userSurveys;
+        } else {
+            if(userToken.renewToken()){
+                for(UserSurvey userSurveyLink : userSurveyRepository.findAllByUserId(loggedUser.getId())){
+                    Survey survey = surveyRepository.findSurveyBySurveyId(userSurveyLink.getSurveyId());
+                    userSurveys.add(survey);
+                }
+                response = userSurveys;
+            } else {
+                response = null;
+            }
         }
-        return userSurveys;
+        return response;
     }
 
-    @PostMapping(path = "/vote_survey")
-    public @ResponseBody boolean voteForSurvey(@RequestParam String userLogin, @RequestParam Integer surveyId){
+    @GetMapping(path = "/vote_survey/{surveyId}")
+    public @ResponseBody boolean voteForSurvey(@PathVariable Integer surveyId){
         Survey survey = surveyRepository.findSurveyBySurveyId(surveyId);
-        User user = userRepository.findByUserLogin(userLogin);
         return survey.addVote();
     }
 
-    @GetMapping(path = "/get_survey_votes/{userLogin}/{surveyId}")
-    public @ResponseBody Integer getSurveyVotes(@PathVariable String userLogin, @PathVariable Integer surveyId){
+    @GetMapping(path = "/get_survey_votes/{surveyId}")
+    public @ResponseBody Integer getSurveyVotes(@PathVariable Integer surveyId){
         Survey survey = surveyRepository.findSurveyBySurveyId(surveyId);
-        User user = userRepository.findByUserLogin(userLogin);
         return survey.getVotes();
     }
 
     @PostMapping("/add_meeting_place")
     public @ResponseBody String addMeetingPlace(@RequestParam String placeName, @RequestParam String placeAddress, @RequestParam String placeWebsite){
         MeetPlace meetPlace = new MeetPlace(placeName, placeAddress, placeWebsite);
+        LocalDateTime actualTime = LocalDateTime.now();
+        String response;
+        if(userToken.getDateExpiring().isAfter(actualTime)){
+            meetingPlacesRepository.save(meetPlace);
+            response = "Meeting place added";
+        } else {
+            if(userToken.renewToken()){
+                meetingPlacesRepository.save(meetPlace);
+                response = "Meeting place added";
+            } else {
+                response = "ERROR, TOKEN COULD NOT BE RENEWED";
+            }
+        }
         meetingPlacesRepository.save(meetPlace);
-        return "Meeting place added";
+        return response;
     }
 
-    @GetMapping("/get_meeting_places/{userLogin}")
-    public @ResponseBody Iterable<MeetPlace> getMeetingPlaces(@PathVariable String userLogin){
-        User user = userRepository.findByUserLogin(userLogin);
+    @GetMapping("/get_meeting_places/")
+    public @ResponseBody Iterable<MeetPlace> getMeetingPlaces(){
         return meetingPlacesRepository.findAll();
     }
 

@@ -1,23 +1,23 @@
 package fr.esiea.restservice.Model;
 
-import org.apache.tomcat.util.log.SystemLogHandler;
-
-import javax.persistence.Entity;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Token {
 
     private String token;
 
-    private Date dateIssued;
+    private LocalDateTime dateIssued;
 
-    private Date dateExpiring;
+    private LocalDateTime dateExpiring;
+
+    private boolean validToken;
 
     public Token(String token) {
         this.token = token;
-        this.dateIssued = new Date();
-        this.dateExpiring = new Date();
-        this.setDateIssued();
+        this.dateIssued = LocalDateTime.now();
+        this.dateExpiring = LocalDateTime.now();
+        this.setDateExpiring();
+        this.validToken = true;
     }
 
     public String getToken() {
@@ -28,21 +28,30 @@ public class Token {
         this.token = token;
     }
 
-    public Date getDateIssued() {
+    public LocalDateTime getDateIssued() {
         return dateIssued;
     }
 
-    public void setDateIssued() {
-        long tokenTTL = 0;
-        System.out.println(tokenTTL);
-        System.out.println(this.dateIssued.getTime());
-        tokenTTL = this.dateIssued.getTime() + 1800;
-        System.out.println(tokenTTL);
-        this.dateExpiring.setTime(tokenTTL);
+    public void setDateExpiring() {
+        System.out.println(this.dateExpiring.toString());
+        this.dateExpiring = this.dateIssued.plusMinutes(30);
         System.out.println(this.dateExpiring.toString());
     }
 
-    public Date getDateExpiring() {
+    public LocalDateTime getDateExpiring() {
         return dateExpiring;
+    }
+
+    public boolean isValidToken() {
+        return validToken;
+    }
+
+    public boolean renewToken(){
+        this.validToken = false;
+        this.dateIssued = LocalDateTime.now();
+        this.setDateExpiring();
+        this.validToken = true;
+
+        return this.validToken;
     }
 }
