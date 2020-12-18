@@ -28,9 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +161,7 @@
       <workItem from="1607499529713" duration="12170000" />
       <workItem from="1607769075464" duration="629000" />
       <workItem from="1608211188675" duration="27388000" />
-      <workItem from="1608329864318" duration="1424000" />
+      <workItem from="1608329864318" duration="1960000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>
