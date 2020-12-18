@@ -17,19 +17,12 @@
                 <h1>Sondage</h1>
                 
                 <label><b>Lieu</b></label>
-                <input type="text" placeholder="Entrer le lieu" name="username" required><br><br>
+                <input type="text" placeholder="Entrer le lieu" name="lieu" required><br><br>
 
 				<label><b>Date</b></label>
                 <p><input type="text" placeholder="format date jj/mm/aaaa" id="date" name="date" /></p>
 
                 <input type="submit" id='submit' value='CREER' >
-                <?php
-                if(isset($_GET['erreur'])){
-                    $err = $_GET['erreur'];
-                    if($err==1 || $err==2)
-                        echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                }
-                ?>
             </form>
         </div>
 		<script type="application/javascript" src="jquery-ui/js/jquery-1.9.1.js"></script> 
