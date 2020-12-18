@@ -1,5 +1,5 @@
 # PWOM-Project
-Projet réalisé pour le cours de programmation web orientée mobile.
+Projet réalisé pour le cours de programmation web orientée mobile. Documentation plus complète des API sur : `http://localhost:8080/api-documentation.html`
 
 ## Présentation
 [Moodle du cours](https://learning.esiea.fr/course/view.php?id=447)
