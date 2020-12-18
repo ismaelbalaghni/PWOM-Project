@@ -28,7 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël" />
+    <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
+      <change afterPath="$PROJECT_DIR$/nouvp.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,15 +65,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="SIGN_OFF_COMMIT" value="true" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1hGdfKpmtvfXs9GeKkD2fpKmvPz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -106,16 +110,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccessingDataMysqlApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.AccessingDataMysqlApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccessingDataMysqlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.esiea.restservice.AccessingDataMysqlApplication" />
+      <module name="PWOM-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.esiea.restservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,9 +152,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.AccessingDataMysqlApplication" />
-      <item itemvalue="Spring Boot.RestServiceApplication" />
+      <item itemvalue="Application.AccessingDataMysqlApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AccessingDataMysqlApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,7 +180,6 @@
       <workItem from="1607499529713" duration="12170000" />
       <workItem from="1607769075464" duration="629000" />
       <workItem from="1608211188675" duration="27388000" />
-      <workItem from="1608329864318" duration="1960000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>
@@ -283,6 +301,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #2 - Modification du pom.xml&#10;&#10;Ajout des dépendances pour le projet.&#10;&#10;Ismaël" />
     <MESSAGE value="Commit #3 - Fin du premier tutoriel&#10;&#10;Ajout de toutes les classes nécessaires pour le premier tutoriel :&#10;* RestServiceApplication (programme principal)&#10;* Greeting (message affiché)&#10;* GreetingController (contrôleur affichant le message)&#10;&#10;Ismaël" />
@@ -294,8 +313,36 @@
     <MESSAGE value="Commit #9 - Ajout des API de sondage - 18/12/2020 00h06CET&#10;&#10;&gt; Création d'une API de création de sondage&#10;&gt; Création d'une API de suppression de sondage&#10;&gt; Création d'une API d'affichage des sondages utilisateur&#10;&gt; Création d'une classe Sondage permettant de contenir les principales informations du sondage&#10;&gt; Création d'une classe MeetPlace permettant de contenir les informations sur le lieu de rendez-vous&#10;&gt; Ajout de 2 repositories pour les sondages et les lieux de rendez-vous" />
     <MESSAGE value="Commit #10 - Ajout d'une table de lien entre sondages et utilisateurs - 18/12/2020 10h37CET&#10;&#10;&gt; Ajout d'une table permettant de lier sondages et utilisateurs&#10;&gt; Création d'un début de documentation pour les API&#10;&gt; Modification des API de création de sondage pour ajouter la table de lien entre sondages et utilisateurs&#10;&gt; Modification de la classe User pour corriger le problème d'ArrayList" />
     <MESSAGE value="Commit #11 - Modification de l'API de sondage - 18/12/2020 10h37CET&#10;&#10;&gt; Modification de la page d'API&#10;&gt; Ajout d'une dépendance permettant d'avoir une documentation d'API : localhost:8080/api-documentation.html&#10;&gt; Modification de User pour optimiser les imports&#10;&gt; Modification de la base de données utilisées (projet_database au lieu de db_example)&#10;&gt; Renommage de certains paramètres pour MeetPlace" />
-    <MESSAGE value="Commit #13 - Ajout du token fonctionnel - 18/12/2020 17h21CET&#10;&#10;&gt; Modification du type pour la date d'émission et date d'expiration (API Java 8)&#10;&gt; Calcul de la date d'expiration (30 minutes)&#10;&gt; Ajout d'une fonctionnalité de renouvellement de token&#10;&gt; Ajout du token utilisateur en variable d'état&#10;&gt; Modification des fonctions importantes avec le support de la vérification du token utilisateur&#10;&gt; Modification de l'API d'affichage des lieux pour enlever la nécessité du login&#10;&gt; Modification de l'API d'affichage des votes du sondage pour enlever la nécessité du login&#10;&gt; Modification de l'API du vote pour le sondage pour pouvoir voter en anonyme" />
-    <MESSAGE value="Commit #14 - Modification de Survey - 18/12/2020 23h34CET&#10;&#10;&gt; Modification de la classe Survey pour utiliser un meetPlaceName au lieu d'un meetPlaceString&#10;&gt; Modification du MainController pour utiliser un meetPlaceName" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #14 - Modification de Survey - 18/12/2020 23h34CET&#10;&#10;&gt; Modification de la classe Survey pour utiliser un meetPlaceName au lieu d'un meetPlaceString&#10;&gt; Modification du MainController pour utiliser un meetPlaceName" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #11 - Modification de l'API de sondage - 18/12/2020 10h37CET&#10;&#10;&gt; Modification de la page d'API&#10;&gt; Ajout d'une dépendance permettant d'avoir une documentation d'API : localhost:8080/api-documentation.html&#10;&gt; Modification de User pour optimiser les imports&#10;&gt; Modification de la base de données utilisées (projet_database au lieu de db_example)&#10;&gt; Renommage de certains paramètres pour MeetPlace" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608309324667">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608309324667" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608310538394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608310538394" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608310538394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608310538394" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608310538394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608310538394" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608310538394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608310538394" />
+    <state x="555" y="128" key="VCS.ChangeListViewerDialog" timestamp="1608309311802">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="128" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1608309311802" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608310338072">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608310338072" />
   </component>
 </project>
