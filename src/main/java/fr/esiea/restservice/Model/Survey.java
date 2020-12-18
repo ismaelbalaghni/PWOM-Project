@@ -15,14 +15,16 @@ public class Survey {
 
     private Integer meetPlaceId;
 
+    private String meetPlaceName;
+
     private Date meetDate;
 
     private Integer userId;
 
     private Integer votes;
 
-    public Survey(Integer meetPlaceId, String meetDate) throws ParseException {
-        this.meetPlaceId = meetPlaceId;
+    public Survey(String meetPlaceName, String meetDate) throws ParseException {
+        this.meetPlaceName = meetPlaceName;
         this.meetDate = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE).parse(meetDate);
         this.votes = 0;
     }
@@ -71,5 +73,15 @@ public class Survey {
         return true;
     }
 
+    public String getMeetPlaceName() {
+        return meetPlaceName;
+    }
 
+    public void setMeetPlaceName(String meetPlaceName) {
+        this.meetPlaceName = meetPlaceName;
+    }
+
+    public void setVotes(Integer votes) {
+        this.votes = votes;
+    }
 }

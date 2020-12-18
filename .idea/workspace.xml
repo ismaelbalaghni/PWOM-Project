@@ -30,6 +30,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d6692a2c-4b82-4b4c-92b4-861f64feb184" name="Default Changelist" comment="Commit #2 - Déplacement du projet, fichiers internes à IntelliJ déplacés.&#10;&#10;Ismaël">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PWOM-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PWOM-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esiea/restservice/Model/Survey.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,13 +112,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AccessingDataMysqlApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,6 +166,7 @@
       <workItem from="1607499529713" duration="12170000" />
       <workItem from="1607769075464" duration="629000" />
       <workItem from="1608211188675" duration="27388000" />
+      <workItem from="1608329864318" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial #1 - Fichiers venant d'IntelliJ.&#10;&#10;Ismaël">
       <created>1599641697066</created>

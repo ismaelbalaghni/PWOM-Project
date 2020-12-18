@@ -2,13 +2,12 @@ package fr.esiea.restservice.Controllers;
 
 import fr.esiea.restservice.Data.MeetingPlacesRepository;
 import fr.esiea.restservice.Data.SurveyRepository;
+import fr.esiea.restservice.Data.UserRepository;
 import fr.esiea.restservice.Data.UserSurveyRepository;
 import fr.esiea.restservice.Model.*;
-import fr.esiea.restservice.Data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.PostRemove;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -17,7 +16,6 @@ import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Base64;
-import java.util.Date;
 
 @RestController
 @RequestMapping(path = "/app")
@@ -73,23 +71,21 @@ public class MainController {
     }
 
     @PostMapping(path = "/create_survey")
-    public @ResponseBody String createSurvey(@RequestParam String userLogin, @RequestParam Integer meetPlaceID, @RequestParam String meetDate) throws ParseException {
+    public @ResponseBody String createSurvey(@RequestParam String userLogin, @RequestParam String meetPlaceName, @RequestParam String meetDate) throws ParseException {
         User loggedUser = userRepository.findByUserLogin(userLogin);
         LocalDateTime actualTime = LocalDateTime.now();
         String response;
         if(userToken.getDateExpiring().isAfter(actualTime)){
-            Survey userSurvey = new Survey(meetPlaceID, meetDate);
+            Survey userSurvey = new Survey(meetPlaceName, meetDate);
             surveyRepository.save(userSurvey);
-            System.out.println(userSurvey.getSurveyId());
             userSurvey.setUserId(loggedUser.getId());
             UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
             userSurveyRepository.save(userSurveyLink);
             response = "Survey created";
         } else {
             if(userToken.renewToken()){
-                Survey userSurvey = new Survey(meetPlaceID, meetDate);
+                Survey userSurvey = new Survey(meetPlaceName, meetDate);
                 surveyRepository.save(userSurvey);
-                System.out.println(userSurvey.getSurveyId());
                 userSurvey.setUserId(loggedUser.getId());
                 UserSurvey userSurveyLink = new UserSurvey(loggedUser.getId(), userSurvey.getSurveyId());
                 userSurveyRepository.save(userSurveyLink);
