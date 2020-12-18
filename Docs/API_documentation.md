@@ -36,13 +36,41 @@ Exemple :
 
 ## API de création de sondage
 
+Méthode : POST
+
+Entrée : 
+- userLogin
+- meetPlaceName
+- meetDate
+
 ## API de vote de sondage
+
+Méthode : GET
+
+Entrée : 
+- surveyId
+
+Sortie :
+- booléen
 
 ## API d'affichage des sondages utilisateurs
 
+Méthode 
+
 ## API de suppression d'un sondage
 
+Méthode : POST
+
+Entrée :
+- userLogin
+- userSurveyId
+
 ## API d'affichage des utilisateurs
+
+Méthode : GET
+
+Sortie : 
+- String (JSON) : liste des utilisateurs
 
 ## API d'ajout de lieux de rendez-vous
 
