@@ -5,6 +5,13 @@
 
     </head>
     <body>
+	
+	<?php
+		session_start();
+		if (!isset($_SESSION['username'])){
+			header('Location: index.php');
+		}
+	?>
 		
 
     <div class="container">
@@ -19,16 +26,16 @@
 			<hr>
 			<form>
 				<label><b>Nom</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="name" required>
+                <input type="text" placeholder="<?php echo $_SESSION['name']?>" name="name" required>
 				
 				<label><b>Email</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="mail" required>
+                <input type="text" placeholder="<?php echo $_SESSION['mail']?>" name="mail" required>
 				
 				<label><b>Pseudo</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                <input type="text" placeholder="<?php echo $_SESSION['username']?>" name="username" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" placeholder="" name="password" required>
 
                 <input type="submit" id='submit' value='SAUVEGARDER' >
 			</form>
