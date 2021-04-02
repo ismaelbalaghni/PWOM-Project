@@ -17,5 +17,5 @@ Nous devons réaliser un site internet simple utilisant ces API.
 Le back-end doit être réalisé en Java. Il y a plein d'avantages à l'utilisation de Java pour le back-end. L'utilisation de JQuery pour le front-end est préconisée. Le choix de la base de données est libre aux élèves.
 
 ## Rendu
-Le rendu doit utiliser un système de versioning (Git) et idéalement ici, sur Github. Le professeur attend des commits au fur et à mesure que le projet avance. Il attend aussi des commits de la part de tous les participants du projet. 
+Le rendu doit utiliser un système de versioning (Git) et idéalement ici, sur [GitHub](https://github.com/ismaelbalaghni/PWOM-Project). Le professeur attend des commits au fur et à mesure que le projet avance. Il attend aussi des commits de la part de tous les participants du projet. 
 Le rendu sera idéalement en binôme. Si les élèves sont un nombre impair, le rendu pourra se faire exceptionnellement en trinôme.
